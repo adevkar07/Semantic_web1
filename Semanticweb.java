@@ -9,7 +9,7 @@ import org.apache.jena.rdf.model.*;
 import org.apache.jena.tdb.TDBFactory;
 import org.apache.jena.util.FileManager;
 import org.apache.jena.vocabulary.*;
-public class Lab1p4 {
+public class Semanticweb {
 	static Model baseFriends = null;
 	static String defaultNameSpace ="http://utdallas/semclass";
 	static String personURI    = "http://utdallas/semclass";
