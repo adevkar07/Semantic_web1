@@ -1,28 +1,27 @@
 import java.io.BufferedReader;
-	import java.io.BufferedWriter;
-	import java.io.FileReader;
-	import java.io.FileWriter;
-	import java.io.InputStream;
-
-	import org.apache.jena.query.Dataset;
-	import org.apache.jena.query.ReadWrite;
-	import org.apache.jena.rdf.model.*;
-	import org.apache.jena.tdb.TDBFactory;
-	import org.apache.jena.util.FileManager;
-	import org.apache.jena.vocabulary.*;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.InputStream;
+import org.apache.jena.query.Dataset;
+import org.apache.jena.query.ReadWrite;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.tdb.TDBFactory;
+import org.apache.jena.util.FileManager;
+import org.apache.jena.vocabulary.*;
 public class Lab1p4 {
 	static Model baseFriends = null;
 	static String defaultNameSpace ="http://utdallas/semclass";
 	static String personURI    = "http://utdallas/semclass";
-    static String FullName     = "Dr Viera Chandler ";
-    static String NamePrefix = "Dr";
-    static String GivenName = "Viera";
-    static String FamilyNAme = "Chandler";
-    static String title = "South West Division President";
-    static String company = "Allied Semantics";
-    static String dob = "Jnuary 15, 1964";
-    static String email ="vechandler@alliedsem.com";
-    static String resourceID = "534772";
+	static String FullName     = "Dr Viera Chandler ";
+	static String NamePrefix = "Dr";
+	static String GivenName = "Viera";
+	static String FamilyNAme = "Chandler";
+	static String title = "South West Division President";
+	static String company = "Allied Semantics";
+	static String dob = "Jnuary 15, 1964";
+	static String email ="vechandler@alliedsem.com";
+	static String resourceID = "534772";
 	  public static void main (String args[])throws Exception {
 		  
 		  org.apache.log4j.Logger.getRootLogger().setLevel(org.apache.log4j.Level.OFF);
@@ -78,11 +77,8 @@ public class Lab1p4 {
 		      		baseFriends.write(new BufferedWriter(new FileWriter("Lab1p4_acd170130.ntp")), "N-TRIPLES");
 		      		baseFriends.write(new BufferedWriter(new FileWriter("Lab1p4_acd170130.n3")), "N3");
 		   	     }catch(Exception e) {
-		   	    	 
-		   	     }
-		  
-		  
-		  
+		   	    	  System.out.println(e);
+		   	     }		  		 		  
 	  }
 	  
 	  }
